@@ -1,0 +1,444 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.lod{
+    position: fixed;
+    z-index: 999999;
+    text-align: center;
+    background: black;
+    width: 100%;
+    height: 100%;   
+}
+.lod h3{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 30px;
+    color: white;
+}
+@media(max-width:970px){
+    .lod img{
+        width: 100vw;
+        height: 100vh;
+    }
+    .lod h3{
+        margin-top: 20%;
+        font-size: 2rem;
+        font-weight: 20px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*--header/menu-bar nad logo----*/
+nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #001933;
+    position: sticky;
+   
+    display: flex;
+    justify-content: space-between;
+    z-index: 15;
+}
+nav .mainmenu{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+nav .mainmenu li a{
+    margin-top: -5px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    font-size: 1.7rem;
+    padding-right: 15px;
+}
+nav .mainmenu li a:hover{
+    background: rgb(255,94,0);
+}
+/*sub-menu-----*/
+.sub-menu-1{
+    display: none;
+    width: 300px;   
+}
+.sub-menu-1 p{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 22px;
+    color: #C0C0C0;
+}
+nav .mainmenu li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+     background:linear-gradient( #000033,transparent);
+    border-top: 4px solid #CC6600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 1px;
+    margin-left: -10px;
+}
+/*end sub menu----*/
+/*---sub-menu-2*/
+.sub-menu-2{
+    display: none;
+    width: 200px;
+    height: auto;
+}
+.sub-menu-2 p{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 22px;
+    color: #C0C0C0;
+}
+nav .mainmenu li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+     background:linear-gradient( #000033,transparent);
+    border-top: 4px solid #000066;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 1px;
+    margin-left: -10px;
+    z-index: 10;
+}
+/*---end-sub-menu-2*/
+nav .openmenu{
+    font-size:2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+nav .mainmenu .closemenu, .icon i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+/*---LOGO-STYLING------*/
+.logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo img{
+    margin-left: 10px;
+    margin-top: -9;
+    padding-bottom: -4;
+    width: 120px;
+    height: 60px;
+}
+@media (max-width:970px){
+    .logo img{
+    text-align: center;
+        
+    }
+}
+/*-------END-LOGO---*/
+/*-------media query--------*/
+@media(max-width:970px){
+    /*small screen menu-bar-------*/
+    nav .mainmenu{
+        margin-top: 0px;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background:rgba(0,0,0,0.8);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openmenu{
+        display: block;
+    }
+    nav .mainmenu li a:hover{
+        background: none;
+        color: orange;
+        font-size: 1.6rem;
+    }
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+    nav .sub-menu-1 a{
+        font-family: sans-serif;
+        font-size: 3px;
+        font-weight: 5px;   
+    }
+    /*----sub-menu-1 -styling in sort short screen--*/
+    .sub-menu-1 p{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 5px;
+    color: white;
+}
+    .sub-menu-1 img{
+        display: none;
+    }
+    nav .mainmenu li:hover .sub-menu-1{
+        position: absolute;
+        top: 100px;
+        left: 70%;
+    }
+    .sub-menu-1{
+    display: none;
+    width: 100px;
+     height: auto;
+}
+    /*----sub-menu-2 -styling in sort short screen--*/
+    .sub-menu-2 p{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 5px;
+    color: white;
+}
+    .sub-menu-2 img{
+        display: none;
+    }
+    nav .mainmenu li:hover .sub-menu-2{
+        position: absolute;
+        top: 100px;
+        left: 70%;
+    }
+    .sub-menu-2{
+    display: none;
+    width: 100px;
+     height: auto;   
+}
+}
+/*-------end-header----*/
+
+/*contact */
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.contactform{
+    width: 500px;
+    font-size: 30px;
+    margin: 50px auto;
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 20px;
+}
+.contactform input, lable,textarea,button{
+    width: 90%;
+    padding: 10px;
+    margin: 10px; 
+}
+.submitbutton{
+    background: green;
+    border-radius: 2px; 
+    font-size: 20px;
+    color: white;
+}
+@media(max-width:970px){
+    .contactform{
+        height: 80%;
+        width: 300px;
+        font-size: 20px;
+    }
+    .contactform input, lable,textarea,button{
+        width: 60%;
+        
+    }
+}/*contact*/
+/* The footer is fixed to the bottom of the page */
+footer{
+    object-fit: cover;
+	position: fixed;
+}
+@media (max-height:970px){
+	footer { position: static; }
+	header { padding-top:20px; }
+}
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top:0px;
+    padding-top: 20px;
+   height:auto;
+}
+@media (max-width:1024px){
+    .footer-distributed{
+        height: 120%;
+    }
+}
+@media (max-width:320px){
+    .footer-distributed{
+        height: 140%;
+    }
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  white;
+	text-decoration: none;;
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+    font-family: sans-serif;
+	margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+@media (max-width: 970px) {
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+.copy{
+    text-align: center;
+    font-size:14px; 
+    color: white;
+    padding-top: 20px;
+    font-family: sans-serif;
+    border-top: 5px solid white;
+}
+.shadow{
+    box-sizing: content-box;
+    transform-style: preserve-3d;
+}
+/* The footer is fixed to the bottom of the page */
